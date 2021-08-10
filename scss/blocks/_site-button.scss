@@ -1,0 +1,11 @@
+// SITE BUTTON
+
+.site-button {
+  @include site-button;
+  cursor: pointer;
+  transition: opacity 0.4s ease;
+}
+
+.site-button:hover {
+  opacity: .6;
+}

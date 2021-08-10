@@ -1,0 +1,49 @@
+/* SITE HEADER */
+.site-header {
+  background-color: #fff;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-wrapper__logo {
+  display: inline-block;
+}
+
+.logo__img {
+  display: block;
+  width: 139px;
+  height: 20px;
+}
+
+.header-wrapper__ul {
+  @include reset-list;
+  display: flex;
+  align-items: center;
+}
+
+.header-wrapper__li ~ .header-wrapper__li {
+  margin-left: 30px;
+}
+
+.header-wrapper__link {
+  @include reset-link;
+  color: $color-text;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+
+.header-wrapper__link:hover {
+  color: #2D314D;
+  border-bottom: 5px solid #2FC3A4;
+  padding-bottom: 25px;
+}
+

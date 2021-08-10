@@ -1,0 +1,45 @@
+// INTRO SECTION\
+.intro-section {
+  background-color: $background-color;
+  background-image: url(/images/intro-bg.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.intro {
+  display: flex;
+}
+
+.intro__content {
+  width: 447px;
+  margin-top: 170px;
+  margin-bottom: 170px;
+}
+
+.intro__title {
+  margin: 0;
+  font-weight: 100;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: $color-text-dark;
+}
+
+.intro__text {
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.28125px;
+  color: $color-text;
+}
+
+.intro__image {
+  transform: translateY(2px) translateX(203px);
+}
+
+.intro__image-img {
+  width: 730px;
+  height: 901px;
+  display: block;
+}

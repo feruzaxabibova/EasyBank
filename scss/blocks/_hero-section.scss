@@ -1,7 +1,6 @@
 /*HERO SECTION*/
 .hero-section {
     background: #F4F5F7;
-    margin-top: -160px;
 }
 
 .hero-section__header {
@@ -79,4 +78,68 @@
     line-height: 26px;
     letter-spacing: -0.25px;
     color: $color-text;
+}
+
+
+@include breakpoint-down (960px) {
+    .hero-section__list {
+        flex-wrap: wrap;
+    }
+    .list-item ~ .list-item {
+        margin-left: 0;
+    }
+    .list-item {
+        width: 50%;
+        padding: 10px;
+    }
+}
+
+@include breakpoint-down (680px) {
+    .hero-section__header {
+        width: 90%;
+        padding-top: 58px;
+        padding-bottom: 50px;
+    }
+    .list-item {
+        width: 100%;
+        text-align: center;
+    }
+    .list-item__img {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@include breakpoint-down (550px) {
+    .hero-section__title {
+        font-size: 36px;
+    }
+    .hero-section__text {
+        font-size: 16px;
+    }    
+}
+
+@include breakpoint-down (434px) {
+    .hero-section__title {
+        font-size: 28px;
+    }
+    .hero-section__text {
+        font-size: 15px;
+        line-height: 26px;
+    } 
+}
+
+@include breakpoint-down (360px) {
+    .hero-section__title {
+        font-size: 24px;
+    }
+    .hero-section__text {
+        font-size: 15px;
+        line-height: 24px;
+    } 
+    .list-item__text {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 24px;
+    }
 }

@@ -52,8 +52,17 @@
 }
 
 .site-footer__button {
-    margin-left: 288px;
+    margin-left: 215px;
     text-align: right;
+}
+
+.footer-button {
+    @include site-button;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+.footer-button:hover {
+    opacity: .6;
 }
 
 .site-footer__button-text {
@@ -67,4 +76,110 @@
     color: #FFFFFF;
     mix-blend-mode: normal;
     opacity: 0.5;
+}
+
+@include breakpoint-down (1070px) {
+    .site-footer__list {
+        margin-left: 110px;
+    }
+    .site-footer__button {
+        margin-left: 180px;
+    }
+    .link-icon {
+        margin-right: 3px;
+    }
+
+}
+
+@include breakpoint-down (930px) {
+    .site-footer__list {
+        margin-left: 95px;
+    }
+    .list-item__link {
+        font-size: 14px;
+    }
+    .site-footer__button-text {
+        font-size: 14px;
+    }
+}
+
+
+@include breakpoint-down (889px) {
+    .site-footer__list {
+        margin-left: 85px;
+    }
+    .site-footer__button {
+        margin-left: 90px;
+    }
+}
+
+@include breakpoint-down (770px) {
+    .link-icon {
+        margin-left: 2px;
+    }
+    .site-footer__list {
+        margin-left: 75px;
+    }
+
+    .site-footer__button {
+        margin-left: 80px;
+    }
+    .footer-button {
+        font-size: 13px;
+    }
+    .site-footer__button-text{
+        font-size: 13px;
+    }
+}
+
+@include breakpoint-down (750px) {
+    .site-footer__content {
+        flex-wrap: wrap;
+    }
+    .site-footer__link {
+        display: flex;
+        // width: 100%;
+    }
+    .site-footer__list {
+        margin-left: 0;
+        padding-right: 85px;
+    }
+    .site-footer__logo {
+        margin-right: 25px;
+    }
+    .link-icon {
+        margin-left: 10px;
+    }
+}
+
+
+@include breakpoint-down (620px) {
+    .site-footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-footer__link {
+        display: block;
+        // width: 40%;
+        margin-bottom: 10px;
+    }
+    .site-footer__logo-img {
+        margin-bottom: 30px;
+        margin-left: 20px;
+    }
+    .site-footer__list {
+        padding-right: 25px;
+        text-align: center;
+    }
+
+    .site-footer__button {
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 17px;
+    }
+}
+
+@include breakpoint-down (320px) {
+    
 }

@@ -47,3 +47,23 @@
   padding-bottom: 25px;
 }
 
+.header-wrapper__hamburger-button {
+  display: none;
+  border: none;
+  background: transparent;
+}
+
+
+@include breakpoint-down (668px) {
+  .header-wrapper__ul {
+    display: none;
+  }
+  
+  .site-button {
+    display: none;
+  }
+
+  .header-wrapper__hamburger-button {
+    display: block;
+  }
+}
